@@ -45,27 +45,27 @@
     <form method="post" action="<?php echo site_url('mahasiswa/savingdata'); ?>">  
         <table>  
             <tr>  
-                <td>NIM:</td>  
+                <td>NIM</td>  
                 <td>:</td>  
                 <td><input type="text" name="nim"></td>  
             </tr>  
             <tr>  
-                <td>Nama:</td>  
+                <td>Nama</td>  
                 <td>:</td>  
                 <td><input type="text" name="nama"></td>  
             </tr>  
             <tr>  
-                <td>Jurusan:</td>  
+                <td>Jurusan</td>  
                 <td>:</td>  
                 <td><input type="text" name="jurusan"></td>  
             </tr>  
             <tr>  
-                <td>Alamat:</td>  
+                <td>Alamat</td>  
                 <td>:</td>  
                 <td><input type="text" name="alamat"></td>  
             </tr><br><br>  
             <tr>  
-                <input type="submit" name="submit" value="Save">  
+            <td colspan="3"><input type="submit" name="submit" value="Tambah"></td>  
             </tr>  
         </table>  
     </form>  
