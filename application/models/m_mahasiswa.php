@@ -22,4 +22,8 @@ class m_mahasiswa extends CI_Model
 
         //DELETE FROM mahasiswa WHERE nim = $nim;
     }
+    //public function simpanData($data = null) 
+    //{ 
+    //    $this->db->insert('mahasiswa', $data); 
+    //}
 }

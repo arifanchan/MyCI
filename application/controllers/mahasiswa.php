@@ -19,4 +19,18 @@ class mahasiswa extends CI_Controller
         $data['mahasiswa'] = $this->m_mahasiswa->tampilData()->result();
         $this->load->view('mahasiswa', $data);
     }
+    function savingdata()  
+    {  
+        //this array is used to get fetch data from the view page.  
+        $data = array(  
+                        'nim'     => $this->input->post('nim'),  
+                        'nama'  => $this->input->post('nama'),  
+                        'jurusan'   => $this->input->post('jurusan'),  
+                        'alamat' => $this->input->post('alamat')  
+                        );  
+        //insert data into database table.  
+        $this->db->insert('mahasiswa',$data);  
+  
+        redirect("mahasiswa/index");  
+    }  
 }
