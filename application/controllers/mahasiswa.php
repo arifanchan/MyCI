@@ -29,15 +29,14 @@ class mahasiswa extends CI_Controller
             'alamat' => $this->input->post('alamat')
         );
         //insert data into database table.  
-        $this->db->insert('mahasiswa', $data);
-
+        $this->m_mahasiswa->simpanData($data);
         redirect("mahasiswa/index");
     }
     function edit($nim)
     {
         $where = array('nim' => $nim);
         $data['mahasiswa'] = $this->m_mahasiswa->edit_data($where, 'mahasiswa')->result();
-        $this->load->view('edit', $data);
+        $this->load->view('edit_mahasiswa', $data);
     }
     function update()
     {
